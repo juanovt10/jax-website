@@ -5,29 +5,30 @@ import HeroImage from '@/assets/images/hero.png';
 
 const Hero = () => {
   return (
-    <section className="flex px-28 pt-32 pb-16 place-content-startjustify-between items-center w-full h-screen">
-      <div className="flex flex-col justify-end items-start gap-20 self-stretch w-1/2 h-full">
-        <div className='flex flex-col items-start gap-8 self-stretch'>
-          <h1 className="text-white text-5xl font-medium leading-normal tracking-[-0.13875rem]">
+    <section className="flex flex-col md:flex-row pt-32 pb-8 md:pb-16 justify-between items-center w-full h-auto md:h-screen">
+      <div className="flex flex-col justify-center md:justify-end items-start gap-8 md:gap-20 w-full md:w-1/2 h-auto md:h-full">
+        <div className='flex flex-col items-start gap-4 md:gap-8 w-full'>
+          <h1 className="text-white text-3xl md:text-5xl font-medium leading-snug md:leading-normal tracking-[-0.05rem] md:tracking-[-0.13875rem]">
             Combining data and creativity to deliver digital success.
           </h1>
-          <p className="text-[#ACACAC] text-md font-normal leading-8">
+          <p className="text-text-secondary text-sm md:text-md font-normal leading-6">
             Lorem ipsum dolor sit amet consectetur. Ipsum hendrerit non dignissim posuere. Montes egestas nulla urna viverra quis in elit euismod.
           </p>
           <div className="flex gap-3 justify-start items-center">
-            <Button 
+            <Button
               label="Start a Project"
               primary
             />
-            <Button 
+            <Button
               label="View our work"
             />
           </div>
-
         </div>
       </div>
-      <div className='flex p-10 flex-col items-center justify-center flex-shrink-0'>
-        <Image 
+
+      {/* Hide Image on Small Screens */}
+      <div className='hidden md:flex p-10 flex-col items-center justify-center flex-shrink-0'>
+        <Image
           src={HeroImage}
           width={500}
           height={500}

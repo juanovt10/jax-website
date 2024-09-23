@@ -26,7 +26,7 @@
 /* NavBar calsses */
 
 .navbar {
-  @apply flex w-full px-10 lg:px-20 py-5 justify-between items-center border-b border-opacity-30 border-[#ACACAC] bg-[rgba(28,28,28,0.60)] backdrop-blur-[20px] fixed top-0 z-10
+  @apply flex w-full px-10 lg:px-20 py-5 justify-between items-center border-b border-opacity-30 border-text-secondary bg-[rgba(28,28,28,0.60)] backdrop-blur-[20px] fixed top-0 z-10
 }
 
 .navbar-link {
@@ -41,6 +41,9 @@
   @apply bg-cta-gradient rounded-[32px] py-4 px-8 border border-primary border-solid font-bold hover:bg-none hover:border hover:border-solid hover:border-link-green hover:text-link-green;
 }
 
+.card {
+  @apply rounded-[1.25rem] border border-[rgba(172,172,172,0.15)];
+}
 
 @layer base {
   :root {
