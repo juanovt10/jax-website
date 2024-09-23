@@ -5,7 +5,7 @@ import HeroImage from '@/assets/images/hero.png';
 
 const Hero = () => {
   return (
-    <section className="flex flex-col md:flex-row pt-32 pb-8 md:pb-16 justify-between items-center w-full h-auto md:h-screen">
+    <section className="flex flex-col md:flex-row pt-32 pb-8 md:pb-16 justify-between items-center w-full h-auto md:h-screen relative z-10">
       <div className="flex flex-col justify-center md:justify-end items-start gap-8 md:gap-20 w-full md:w-1/2 h-auto md:h-full">
         <div className='flex flex-col items-start gap-4 md:gap-8 w-full'>
           <h1 className="text-white text-3xl md:text-5xl font-medium leading-snug md:leading-normal tracking-[-0.05rem] md:tracking-[-0.13875rem]">

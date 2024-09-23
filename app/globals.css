@@ -26,7 +26,7 @@
 /* NavBar calsses */
 
 .navbar {
-  @apply flex w-full px-10 lg:px-20 py-5 justify-between items-center border-b border-opacity-30 border-text-secondary bg-[rgba(28,28,28,0.60)] backdrop-blur-[20px] fixed top-0 z-10
+  @apply flex w-full px-10 lg:px-20 py-5 justify-between items-center border-b border-opacity-30 border-text-secondary bg-[rgba(28,28,28,0.60)] backdrop-blur-[20px] fixed top-0 z-20
 }
 
 .navbar-link {
@@ -44,6 +44,14 @@
 .card {
   @apply rounded-[1.25rem] border border-[rgba(172,172,172,0.15)];
 }
+
+
+/* Blurred circle */
+
+.circle {
+  @apply w-[47.3125rem] h-[47.3125rem] bg-[rgba(34,139,34,0.12)] rounded-full blur-[100px]
+}
+
 
 @layer base {
   :root {
