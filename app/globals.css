@@ -16,18 +16,34 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+
+/* NavBar calsses */
+
+.navbar {
+  @apply flex w-full px-10 lg:px-20 py-5 justify-between items-center border-b border-opacity-30 border-[#ACACAC] bg-[rgba(28,28,28,0.60)] backdrop-blur-[20px] fixed top-0 z-10
+}
+
+.navbar-link {
+  @apply flex h-8 p-1 justify-center items-center gap-1 hover:text-link-green active:text-link-green 
+}
+
+.button {
+  @apply text-white rounded-[32px] border border-white border-solid py-4 px-8 hover:text-link-green hover:border-link-green 
+}
+
+.primary-button {
+  @apply bg-cta-gradient rounded-[32px] py-4 px-8 border border-primary border-solid font-bold hover:bg-none hover:border hover:border-solid hover:border-link-green hover:text-link-green;
+}
+
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
   }
 }
