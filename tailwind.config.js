@@ -20,7 +20,7 @@ module.exports = {
   		colors: {
 				'primary': '#1E1E1E',
   			'link-green': '#00FF38',
-				'text-secondary': '#ACACAC'
+				'secondary': '#ACACAC'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

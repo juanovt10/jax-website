@@ -10,7 +10,7 @@ const ServiceCard = ({ title, description, Icon, href }) => {
       <h3 className='text-white text-xl md:text-2xl font-semibold leading-normal'>
         {title}
       </h3>
-      <p className='self-stretch text-text-secondary text-justify text-[1.125rem] font-normal leading-5'>
+      <p className='self-stretch text-secondary text-justify text-[1.125rem] font-normal leading-5'>
         {description}
       </p>
       <Link

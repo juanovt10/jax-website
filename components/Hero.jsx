@@ -11,7 +11,7 @@ const Hero = () => {
           <h1 className="text-white text-3xl md:text-5xl font-medium leading-snug md:leading-normal tracking-[-0.05rem] md:tracking-[-0.13875rem]">
             Combining data and creativity to deliver digital success.
           </h1>
-          <p className="text-text-secondary text-sm md:text-md font-normal leading-6">
+          <p className="text-secondary text-sm md:text-md font-normal leading-6">
             Lorem ipsum dolor sit amet consectetur. Ipsum hendrerit non dignissim posuere. Montes egestas nulla urna viverra quis in elit euismod.
           </p>
           <div className="flex gap-3 justify-start items-center">
