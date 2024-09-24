@@ -5,17 +5,23 @@ import Button from './Button';
 import NavItem from './NavItem';
 import BurgerMenu from '@/assets/vectors/burger-menu.svg';
 import Close from '@/assets/vectors/close.svg';
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet';
+import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
+import ServicesMenu from './ServicesMenu';
 
 
 const navItems = [
   { label: 'Home', isActive: true, href: '/' },
-  { label: 'Portfolio', hasDropdown: true, href: '/' },
   { label: 'Services', hasDropdown: true, href: '/' },
+  { label: 'Portfolio', href: '/' },
   { label: 'About Us', href: '/' },
   { label: 'Contact Us', href: '/' }
 ];
 
+const services = [
+  { label: 'Web Development', href: '/web-development' },
+  { label: 'Mobile Apps', href: '/mobile-apps' },
+  { label: 'Cloud Solutions', href: '/cloud-solutions' },
+];
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,7 +58,16 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex h-12 justify-center items-center gap-8">
           {navItems.map((item, index) => (
-            <NavItem key={index} {...item} />
+            <li key={index} className="relative group">
+              {item.label === 'Services' ? (
+                <>
+                  <NavItem {...item} />
+                  <ServicesMenu />
+                </>
+              ) : (
+                <NavItem {...item} />
+              )}
+            </li>
           ))}
         </ul>
         <div className='hidden lg:block'>

@@ -33,6 +33,10 @@
   @apply flex h-8 p-1 justify-center items-center gap-1 hover:text-link-green active:text-link-green 
 }
 
+.services-menu {
+  @apply p-8 items-center gap-8 bg-[rgb(28,28,28)] backdrop-blur-[20px] border border-opacity-30 border-secondary
+}
+
 .button {
   @apply text-white rounded-[32px] border border-white border-solid py-4 px-8 hover:text-link-green hover:border-link-green 
 }
